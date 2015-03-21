@@ -1,49 +1,87 @@
-    body {
-    font-family: Georgia, "Helvetica",
-          Times, serif;
-    color: purple;
-    background-color: #F0F0F0 }
-
-    ul.egmenu {  
-    background: #333; 
-    height: 30px;
-    width: 100%; 
+body{
+  color: #333;
+  font-family: Arial, "Monaco", sans-serif;
+  font-size: 16px;
 }
 
-ul.egmenu > li { 
-    float: left; 
-    position: relative;  
+#container{
+  margin: 0 auto;
+  max-width: 960px;
 }
 
-ul.egmenu ul {
-    background: #444; 
-    display: none; 
-    position: absolute;
-    left: 0; top: 100%;
+#container header{
+  background: #DDD;
+  border-bottom: 1px solid; 
 }
 
-ul.egmenu a { 
-    cursor: pointer; 
-    display: block; 
-    color: white; 
-    line-height: 30px; 
-    padding: 0 10px; 
+#container header h1{
+  font-size: 4em;
+  margin: 1em;
 }
 
-ul.egmenu li { list-style: none; }
+#container header p{
+  font-size: 2em;
+  margin: 1em;
+}
 
-ul.egmenu li:hover { background: #555;  }
-ul.egmenu li:hover ul { display: block;  }
+#container #content{
+  background: #CCC;
+  padding: 10px; 
+}
 
-  h1 {
-  color: #402424;
-    font-family: Helvetica, Geneva, Arial,
-          SunSans-Regular, sans-serif; 
-        }
+#container #content article{
+  background: #FFF;
+  border-bottom: 2px solid #CCC;
+}
 
-    footer {
-      font-family: Helvetica, Geneva, Arial;
-      background-color: #444;
-      text-align:center;
-      color:#FFF;
-    }
+#container footer{
+  background: #CCC;
+}
+
+@media screen and (max-width: 960px){
+
+}
+
+@media screen and (max-width: 650px){
+  #container header{
+    background: #DDD;
+    border-bottom: 1px solid; 
+    padding: 8px;
+    text-align: center;
+  }
+
+  #container header h1{
+    font-size: 4em;
+    margin: 1px;
+    color: red;
+
+  }
+
+#container header p{
+  color: blue;
+    font-size: 2em;
+    margin: 1em;
+  }
+
+}
+
+@media (min-width: 321px) and (max-width: 480px){
+  #container header{
+    background: #232323;
+    border-bottom: 5px solid; 
+    padding: 2px;
+    text-align: center;
+  }
+
+  #container header p{
+    color: #ABCD11;
+    font-size: 12px;
+    margin: 1em;
+  }
+
+  #container footer{
+    color: #383838;
+    text-align: center;
+  }
+
+}
